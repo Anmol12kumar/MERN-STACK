@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>
+    <style>
+        h2{
+            color: blue;
+            background-color: navajowhite;
+        }
+        .text{
+            font-size: 30px;
+            color: indigo;
+        }
+        #mytag{
+            text-decoration: underline;
+            color: green;
+            font-size: x-large;
+        }
+        h3{
+            color: orange !important;
+        }
+        .text2{
+            color: red;
+            font-size: 40px !important;
+        }
+        /* !important keyword has the highest priority among all css types */
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: red; font-size: 30px;">Inline CSS is used to style individual elements only</h1>
+
+    <h2>Internal CSS is used to style entire page at once</h2>
+    <h2 class="text">Name Selector is used to style tags by name</h2>
+    <p class="text">Class selector is used to style tags by their class name</p>
+    <p id="mytag">ID Selector is used to style tags by their id name</p>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <button class="btn">Submit</button>
+</body>
+</html>
