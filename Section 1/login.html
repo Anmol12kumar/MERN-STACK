@@ -1,0 +1,252 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginForm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card{
+            border: 1px solid black;
+            width: 20%;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 4px 8px black;
+            background-color: #f9f9f9;
+        }
+        
+        .form-title{
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 800;
+            color: #333333f0;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: linear-gradient(45deg, #54efe4, #d279f5, #50f453, #f8e976), url("https://wallpaperaccess.com/full/568191.png"); */
+            background-image: url("https://wallpaperaccess.com/full/568191.png");
+            background-size: cover;
+            background-position: bottom;
+            backdrop-filter: saturate(100%) blur(10px);
+
+        }
+
+        .text-input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background: #0056b3;
+            transform: scale(1.02);
+        }
+
+        .link{
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .forget-link{
+            margin-bottom: 20px;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+
+        <h2 class="form-title">Login Form</h2>
+        <form>
+
+            <label for="">Email Address</label>
+            <input class="text-input" type="email" placeholder="Enter your email">
+
+            <label for="">Password</label>
+            <input class="text-input" type="password" placeholder="Enter your password">
+
+            <a href="#" class="link forget-link">Forgot Password?</a>
+
+            <button class="btn-submit">Submit</button>
+
+            <a href="#" class="link signup-link">Not Registered Yet? Signup</a>
+
+        </form>
+
+    </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Contrast Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet" />
+    
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://wallpaperaccess.com/full/568191.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            width: 90%;
+            max-width: 400px;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 800;
+            color: #1a1a1a; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        label {
+            color: #333; 
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .text-input {
+            display: block;
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0 20px 0;
+            border: 1.5px solid #ccc; 
+            border-radius: 10px;
+            background: #fff;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .text-input:focus {
+            border-color: #007bff;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .link {
+            display: block;
+            text-decoration: none;
+            color: #0056b3; 
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .forget-link {
+            text-align: right;
+            margin-top: -10px;
+            margin-bottom: 25px;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <h2 class="form-title">Login Form</h2>
+        <form>
+            <label>Email Address</label>
+            <input class="text-input" type="email" placeholder="e.g. name@mail.com" required>
+
+            <label>Password</label>
+            <input class="text-input" type="password" placeholder="••••••••" required>
+
+            <a href="#" class="link forget-link">Forgot Password?</a>
+
+            <button type="submit" class="btn-submit">Sign In</button>
+
+            <p class="signup-link">
+                New here? <a href="#" class="link" style="display:inline;">Create Account</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
