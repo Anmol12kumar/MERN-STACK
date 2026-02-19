@@ -28,3 +28,17 @@ console.log(movies);
 movies.pop()
 movies.shift()
 console.log(movies);
+
+//Slicing
+
+console.log(movies.slice(1, 4));
+console.log(movies.slice(1));
+console.log(movies.slice(-2));
+
+//splicing
+
+console.log(movies);
+
+// movies.splice(3, 2)
+movies.splice(3, 2, 'Flash', 'Superman')
+console.log(movies);
