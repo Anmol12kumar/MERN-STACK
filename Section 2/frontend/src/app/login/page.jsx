@@ -1,4 +1,5 @@
 "use client"
+import MyButton from '@/components/MyButton';
 import React from 'react'
 
 const Login = () => {
@@ -85,6 +86,9 @@ const Login = () => {
                     </div>
                 </div>
                 {/* End Sign In */}
+                <MyButton dis={true}>Button 1</MyButton>
+                <MyButton>Submit</MyButton>
+                <MyButton>Click Me</MyButton>
             </div>
         </div>
     )
