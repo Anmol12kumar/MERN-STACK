@@ -2,12 +2,28 @@ const express = require('express');
 
 const router = express.Router();
 
-router.add('/', (req, res) => {
-    res.send('response from add user');
+const Model = require('../models/userModel');
+
+router.post('/add', (req, res) => {
+    console.log(req.body);
+    new Model(req.body).save()
+        .then((result) => {
+            req.status(200).json(result);
+        }).catch((err) => {
+            console.log(err);
+            req.status(500).json(err);
+        });
 });
 
 router.get('/getall', (req, res) => {
-    res.send('response from getall user');
+    // res.send('response from getall user');
+    Model.find()
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 router.get('/getbyid', (req, res) => {
