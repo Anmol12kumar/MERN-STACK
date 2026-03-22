@@ -15,6 +15,26 @@ router.post('/add', (req, res) => {
         });
 });
 
+router.get('/getbyemail/:email', (req, res) => {
+    Model.findOne({ email: req.params.email })
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.get('/getbycity/:city', (req, res) => {
+    Model.find({ city: req.params.city })
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});2
+
 router.get('/getall', (req, res) => {
     // res.send('response from getall user');
     Model.find()
