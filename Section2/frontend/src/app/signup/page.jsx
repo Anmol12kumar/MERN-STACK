@@ -1,6 +1,8 @@
 'use client';
+import axios from 'axios';
 import { useFormik } from 'formik';
 import React from 'react';
+import toast from 'react-hot-toast';
 import * as Yup from 'yup';
 
 const signupSchema = Yup.object().shape({
@@ -22,9 +24,18 @@ const Signup = () => {
             password: '',
             confirmPassword: ''
         },
-            onsubmit: (values) => {
+            onsubmit: async (values) => {
                 console.log(values);
-            }
+
+                await axios.post('http://localhost:5000/user/add', values)
+                console.log(res.status);
+                if(res.status === 200){
+                    toast.success('signup successful');
+                }else{
+                    toast.error('signup failed');
+                }
+            },
+            validationSchema: signupSchema
     });
 
     return (

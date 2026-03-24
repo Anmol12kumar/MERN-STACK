@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const dns = require("node:dns/promises");
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
-const url = 'mongodb+srv://guptaanmolkumar37:<db_password>@mern-stack-web.z0lszsx.mongodb.net/?appName=MERN-stack-web'
+const url = 'mongodb+srv://guptaanmolkumar37:Anmol89@mern-stack-web.z0lszsx.mongodb.net/?appName=MERN-stack-web'
 
 mongoose.connect(url)
 .then((result) => {
@@ -12,4 +12,4 @@ mongoose.connect(url)
     console.log(err);
 });
 
-module.exports = mongoose;
+module.exports = mongoose;n 
